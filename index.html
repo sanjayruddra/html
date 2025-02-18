@@ -3,48 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first web plan </title>
+    <title>Payment Form</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        h2{
-            color:brown;
-        }
-    </style>
-</head>
+    </head>
+
 <body>
-    <h1>Welcome to my class room</h1>
-    <h2>Welcome to my class room</h2>
-    <h3>Welcome to my class room</h3>
-    <h4>Welcome to my class room</h4>
-    <h5>Welcome to my class room</h5>
-    <h6>Welcome to my class room</h6>
-    <hr>
-    <p> <b>Lipsum, dolor sit amet consectetur adipisicing elit. </b> <i> voluptates officiis dolorum officia consequuntur. </i>Quia laboriosam reprehenderit incidunt assumenda nihil voluptatum tempore doloremque temporibus sed esse, 10 <sup>2</sup> 10 <sub>2</sub> cupiditate quasi totam maiores iusto enim officiis, facilis delectus voluptate excepturi eos ducimus? </p>
-    <hr>
-    <h2>Shopping List</h2>
-    <ul>
-        <li>Milk</li>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Jam</li>
-        <li>Maggie</li>
-        <li>Rusk (Tost)</li>
-    </ul>
-    <hr>
-    <h2>Maggie Recipe</h2>
-    <ol type="1">
-        <li>Boil properly</li>
-        <ul>
-            <li>minimum 5 minutes</li>
-            <li>with steam</li>
-        </ul>
-        <li>Put oil</li>
-    </ol>
-    <hr>
-    <a href="https://www.google.com" target="_blank"><h4>Google</a></h4
-    <br>
-    <a href="https://accounts.google.com/" target="_blank">Gmail</a>
-    <br>
-    <a href="new.html" terget="_blank">new</a>
-    </body>
+    <div class="container">
+        <form action="" method="get">
+            <h1 class="main_heading">Payment Form</h1>
+            <hr>
+            <h2>User Information</h2>
+            <p>Name: * 
+                <input type="text" required name="name" placeholder="Oom Panday">
+            </p>
+            <p>
+            <fieldset>
+                <legend>Gender *</legend>           
+                Male <input type="radio" name="gender" id="Male" required> Female <input type="radio" name="gender" id="Female" required>
+            </fieldset>
+            </p>
+            <p>
+                Address: <textarea placeholder="Enter your Address" id="address" cols="100" rows="8"></textarea>
+            </p>
+            <p>
+                Email: * <input type="Email" Name="Email" id="Email" placeholder="oompanday@gmail.com">
+            </p>
+            <p>
+                Pin Code: * <input type="number" name="pincode" id="pincode" placeholder="123456">
+            </p>
+            <h2>Payment Information</h2>
+            <img src="visa-logo.png" alt="src">
+            <img src="images.png" alt="src">
+            <img src="master.png" alt="src">
+            <img src="express.jpg" alt="">
+            <p>Card Type *
+                <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card Type</option>
+                <option value="Visa">Visa</option>
+                <option value="Master Card">Master Card</option>
+                <option value="Rupay">Rupay</option>
+        </select>
+            </p>
+            <p>
+            Card number * <input type="number" name="Card_number" id="Card_number" placeholder="4545-3201-0456-0584">
+            </p>
+            <p>
+                Expiration Date: * <input type="date" name="exp_date" id="exp_date" required>
+            </p>
+            <p>
+                CVV * <input type="password" name="password" id="CVV" placeholder="***">
+            </p>
+            <p>
+                <input type="submit" value="Pay Now" id="click" onclick="alert('Submitted')">
+            </p>
+            </form>
+    </div>
+    <script src="index.js">
+
+    </script>
+
+    
+</body>
+
 </html>
